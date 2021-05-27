@@ -1,0 +1,50 @@
+{
+  "name": "aexcel",
+  "version": "0.0.1",
+  "private": true,
+  "main": "index.js",
+  "author": "aouos",
+  "scripts": {
+    "start": "electron .",
+    "serve": "vue-cli-service serve",
+    "build": "vue-cli-service build",
+    "pack": "electron-packager ./ aouos --platform=win32 --arch=x64 --win32metadata.FileDescription='aouos' --ignore=node_modules --ignore=outs --ignore=src --ignore=public --out=outs --icon=public/favicon.ico --asar"
+  },
+  "dependencies": {
+    "ant-design-vue": "^1.7.2",
+    "core-js": "^3.6.5",
+    "save": "^2.4.0",
+    "vue": "^2.6.11",
+    "vue-router": "^3.4.9"
+  },
+  "devDependencies": {
+    "@vue/cli-plugin-babel": "~4.5.0",
+    "@vue/cli-plugin-eslint": "~4.5.0",
+    "@vue/cli-service": "~4.5.0",
+    "babel-eslint": "^10.1.0",
+    "electron": "^13.0.1",
+    "electron-packager": "^15.2.0",
+    "eslint": "^6.7.2",
+    "eslint-plugin-vue": "^6.2.2",
+    "vue-template-compiler": "^2.6.11"
+  },
+  "eslintConfig": {
+    "root": true,
+    "env": {
+      "node": true
+    },
+    "extends": [
+      "plugin:vue/essential",
+      "eslint:recommended"
+    ],
+    "parserOptions": {
+      "parser": "babel-eslint"
+    },
+    "rules": {}
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not dead"
+  ]
+}
